@@ -208,6 +208,7 @@ end
 
 def big_shoe_rebounds
   largest_shoe = 0
+  rebounds = nil
   game_hash.each do |side, team|
     team.each do |stat, value|
       team[:players].each do |player|
@@ -218,7 +219,7 @@ def big_shoe_rebounds
       end
     end
   end
-  1
+  rebounds
 end
       
       
